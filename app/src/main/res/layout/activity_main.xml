@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image5"
+        android:scaleType="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buat_logo_dalem"
+                android:contentDescription="TODO"
+                android:src="@drawable/logo_dalem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/welcome"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#f2f2f2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/gridkiri"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/radius"
+                    android:contentDescription="@string/todo"
+                    android:elevation="3dp"
+                    android:onClick="product"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/slider2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRODUCT"
+                    android:textColor="#4db5ff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/radius"
+                    android:elevation="3dp"
+                    android:onClick="News"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/slider2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEWS"
+                    android:textColor="#4db5ff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gridkanan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/radius"
+                    android:elevation="3dp"
+                    android:scaleType="fitCenter"
+                    android:onClick="produkk"
+                    android:src="@drawable/slider2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Produk"
+                    android:textColor="#4db5ff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/radius"
+                    android:elevation="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/slider2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MESSAGES"
+                    android:textColor="#4db5ff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

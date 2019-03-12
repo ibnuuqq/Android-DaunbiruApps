@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ResponseCategory.SUB.DetailSub">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Produk"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="19dp"
+            android:textColor="#fff"
+            android:background="@drawable/buat_productinfo"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/nama_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#3888d9"
+            android:gravity="center"
+            android:layout_marginHorizontal="10sp"
+            android:text="Nama Produk"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="19dp"
+            android:textColor="#fff"
+            android:background="@drawable/buat_productinfo"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="20sp"
+            android:text="kegelapan"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="left"/>
+            </LinearLayout>
+</ScrollView>

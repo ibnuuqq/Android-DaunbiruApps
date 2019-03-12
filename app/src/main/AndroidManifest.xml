@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.simple.ibnuqarib.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResponseNews.NEWS.DetailActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseNews.NEWS.LihatNews"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseSoftware.SOFTWARE.LihatSoftware"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseProduk.PRODUCT.DetailProduk"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseProduk.PRODUCT.LihatProduk"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Download" />
+        <activity
+            android:name=".ResponseSoftware.SOFTWARE.DetailSoftware"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseModul.MODUL.DetailModul"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseModul.MODUL.LihatDokumen"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Maps" />
+        <activity android:name=".web" />
+        <activity android:name=".Drawerr" />
+        <activity
+            android:name=".ResponseCategory.SUB.LihatSub"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseCategory.SUB.DetailSub"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseCategory.LihatCategory"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ResponseModul.MODUL.DownloadModul"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".ResponseSoftware.SOFTWARE.DownloadSoftware"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".LihatOnline.Monitoring.LihatOnline"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".LihatAnalyzer.Analyzer.LihatAnalyzer"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".LihatAnalyzer.Analyzer.LihatMediaAnalyzer"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".LihatOnline.Monitoring.LihatMediaOnline"
+            tools:ignore="InnerclassSeparator" />
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Daunbiru Apps </string>
+    <string name="app_namee">Daunbiru Apps </string>
+    <string name="daun_biru">Daun Biru</string>
+    <string name="engineering">Engineering</string>
+    <string name="product">Product</string>
+    <string name="messages">Messages</string>
+    <string name="judul_text">Judul Text</string>
+    <string name="todo">TODO</string>
+    <string name="spesifikasi">Spesifikasi</string>
+    <string name="spek">SPEK</string>
+    <string name="harga">Harga</string>
+    <string name="productt">PRODUCT</string>
+    <string name="news_amp_info"><![CDATA[NEWS & INFO]]></string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="specification">Specification</string>
+    <string name="our_product">OUR PRODUCT</string>
+    <string name="welcome">WELCOME</string>
+    <string name="nama_sub">Nama Sub</string>
+    <string name="category">Category :</string>
+    <string name="title_activity_drawer">Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_drawerr">Drawerr</string>
+</resources>

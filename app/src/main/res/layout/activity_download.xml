@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:scrollbars="vertical"
+    tools:context=".Download">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#3888d9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUPPORT"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#3888d9"
+                android:background="@drawable/buat_ourproduct"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#f2f2f2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/gridkiri"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"
+                    android:contentDescription="@string/todo"
+                    android:elevation="3dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="software"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/slider2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIRMWARE"
+                    android:textColor="#4db5ff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gridkanan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"
+                    android:elevation="3dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="fitCenter"
+                    android:onClick="modul"
+                    android:src="@drawable/slider2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOKUMEN"
+                    android:textColor="#4db5ff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+
+             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
