@@ -26,6 +26,7 @@ public class DetailModul extends Activity {
     //Button button;
     String URL_DOWNLOAD;
     WebView webView;
+    DownloadManager downloadManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,17 +38,22 @@ public class DetailModul extends Activity {
         tvKett = findViewById(R.id.keterangan_dokumen);
 
 
-        URL_DOWNLOAD = getIntent().getStringExtra("LINK");
+        URL_DOWNLOAD = getIntent().getStringExtra("NAMA");
         showDetailModul();
-        webView = findViewById(R.id.view_modulDownload);
+        //webView = findViewById(R.id.view_modulDownload);
         Button go = findViewById(R.id.download);
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent inten = new Intent(DetailModul.this,DownloadModul.class);
-                inten.putExtra("LINK2",URL_DOWNLOAD);
-                Log.d("URL", "onClick: " + inten.putExtra("LINK2",URL_DOWNLOAD));
-                startActivity(inten);
+                downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
+                Uri uri = Uri.parse("http://192.168.1.44/daunbiruapp/file/"+ URL_DOWNLOAD);
+                DownloadManager.Request request = new DownloadManager.Request(uri);
+                request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                Long reference = downloadManager.enqueue(request);
+          //      Intent inten = new Intent(DetailModul.this,DownloadModul.class);
+            //    inten.putExtra("LINK2",URL_DOWNLOAD);
+              //  Log.d("URL", "onClick: " + inten.putExtra("LINK2",URL_DOWNLOAD));
+                //startActivity(inten);
                // webView.loadUrl("https://google.com");
                 //webView.setWebViewClient(new WebViewClient());
             }

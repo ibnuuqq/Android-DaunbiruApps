@@ -1,6 +1,9 @@
 package com.simple.ibnuqarib.myapplication.ResponseSoftware.SOFTWARE;
 
+import android.app.DownloadManager;
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +21,7 @@ public class DetailSoftware extends AppCompatActivity {
     TextView tvNamaS,tvVersi,tvTgl,tvKet;
     String URL_DOWNLOAD;
     WebView webView;
+    DownloadManager downloadManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,17 +30,23 @@ public class DetailSoftware extends AppCompatActivity {
         tvVersi = findViewById(R.id.versi);
         tvKet = findViewById(R.id.keterangan);
         tvTgl = findViewById(R.id.tanggal_software);
-        URL_DOWNLOAD = getIntent().getStringExtra("LINK");
+        URL_DOWNLOAD = getIntent().getStringExtra("NAMA_S");
         showSoftwareDetail();
-        webView = findViewById(R.id.view_softwareDownload);
+        //webView = findViewById(R.id.view_softwareDownload);
         Button go = findViewById(R.id.downloadSoft);
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent inten = new Intent(DetailSoftware.this,DownloadSoftware.class);
-                inten.putExtra("LINK2",URL_DOWNLOAD);
-                Log.d("URL", "onClick: " + inten.putExtra("LINK2",URL_DOWNLOAD));
-                startActivity(inten);
+                downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
+                Uri uri = Uri.parse("http://192.168.1.44/daunbiruapp/software/"+ URL_DOWNLOAD);
+                DownloadManager.Request request = new DownloadManager.Request(uri);
+                request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                Long reference = downloadManager.enqueue(request);
+
+                //Intent inten = new Intent(DetailSoftware.this,DownloadSoftware.class);
+                //inten.putExtra("LINK2",URL_DOWNLOAD);
+                //Log.d("URL", "onClick: " + inten.putExtra("LINK2",URL_DOWNLOAD));
+                //startActivity(inten);
                 // webView.loadUrl("https://google.com");
                 //webView.setWebViewClient(new WebViewClient());
             }

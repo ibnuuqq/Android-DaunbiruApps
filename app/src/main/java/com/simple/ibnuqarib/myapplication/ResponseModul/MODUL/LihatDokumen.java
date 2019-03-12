@@ -1,5 +1,6 @@
 package com.simple.ibnuqarib.myapplication.ResponseModul.MODUL;
 
+import android.app.DownloadManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.simple.ibnuqarib.myapplication.Download;
 import com.simple.ibnuqarib.myapplication.R;
 import com.simple.ibnuqarib.myapplication.ResponseModul.ModulItem;
 import com.simple.ibnuqarib.myapplication.ResponseModul.ResponseModul;

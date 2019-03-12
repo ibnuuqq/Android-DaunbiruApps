@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simple.ibnuqarib.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.simple.ibnuqarib.myapplication.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseNews.NEWS.DetailActivity" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseNews.NEWS.LihatNews" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseSoftware.SOFTWARE.LihatSoftware" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseProduk.PRODUCT.DetailProduk" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseProduk.PRODUCT.LihatProduk" />
+        <activity
+            android:name="com.simple.ibnuqarib.myapplication.MainActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.Download" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseSoftware.SOFTWARE.DetailSoftware" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseModul.MODUL.DetailModul" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseModul.MODUL.LihatDokumen" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.Maps" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.web" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.Drawerr" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseCategory.SUB.LihatSub" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseCategory.SUB.DetailSub" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseCategory.LihatCategory" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseModul.MODUL.DownloadModul" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.ResponseSoftware.SOFTWARE.DownloadSoftware" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.LihatOnline.Monitoring.LihatOnline" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.LihatAnalyzer.Analyzer.LihatAnalyzer" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.LihatAnalyzer.Analyzer.LihatMediaAnalyzer" />
+        <activity android:name="com.simple.ibnuqarib.myapplication.LihatOnline.Monitoring.LihatMediaOnline" />
+    </application>
+
+</manifest>

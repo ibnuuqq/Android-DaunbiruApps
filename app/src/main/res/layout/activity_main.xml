@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:background="#f2f2f2"
+            android:background="#fff"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -63,47 +63,85 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:paddingTop="20dp">
 
-                <ImageButton
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
-                    android:background="@drawable/radius"
-                    android:contentDescription="@string/todo"
-                    android:elevation="3dp"
-                    android:onClick="product"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/slider2" />
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="PRODUCT"
-                    android:textColor="#4db5ff"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:typeface="sans" />
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="30dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp">
 
 
-                <ImageButton
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/radius"
-                    android:elevation="3dp"
-                    android:onClick="News"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/slider2" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/slider2" />
+
+                        <TextView
+                            android:id="@+id/namaa_okumen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="PRODUCT"
+                            android:textColor="#3888d9"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="NEWS"
-                    android:textColor="#4db5ff"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:typeface="sans" />
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="50dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp">
 
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/slider2" />
+
+                        <TextView
+                            android:id="@+id/namaa_dokumen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="CONTACT "
+                            android:textColor="#3888d9"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
             </LinearLayout>
 
             <LinearLayout
@@ -113,44 +151,85 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
 
-                <ImageButton
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
-                    android:background="@drawable/radius"
-                    android:elevation="3dp"
-                    android:scaleType="fitCenter"
-                    android:onClick="produkk"
-                    android:src="@drawable/slider2" />
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Produk"
-                    android:textColor="#4db5ff"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:typeface="sans" />
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="30dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp">
 
 
-                <ImageButton
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/radius"
-                    android:elevation="3dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/slider2" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/slider2" />
+
+                        <TextView
+                            android:id="@+id/namaa2_okumen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="SUPPORT"
+                            android:textColor="#3888d9"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="MESSAGES"
-                    android:textColor="#4db5ff"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:typeface="sans" />
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="50dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/slider2" />
+
+                        <TextView
+                            android:id="@+id/naa_dokumen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="WEBSITE"
+                            android:textColor="#3888d9"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
