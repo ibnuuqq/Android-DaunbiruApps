@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -14,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -52,7 +53,7 @@
             tools:ignore="InnerclassSeparator" />
         <activity android:name=".Maps" />
         <activity android:name=".web" />
-        <activity android:name=".Drawerr" />
+
         <activity
             android:name=".ResponseCategory.SUB.LihatSub"
             tools:ignore="InnerclassSeparator" />
@@ -75,6 +76,17 @@
             tools:ignore="InnerclassSeparator" />
         <activity android:name=".LihatOnline.Monitoring.LihatMediaOnline"
             tools:ignore="InnerclassSeparator" />
-    </application>
+        <activity android:name=".About" />
+        <activity android:name=".Contact" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
 
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Drawerr"
+            android:label="@string/app_name"
+
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
 </manifest>

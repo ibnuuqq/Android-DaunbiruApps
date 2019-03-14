@@ -57,6 +57,7 @@ public class Drawerr extends AppCompatActivity implements NavigationView.OnNavig
     //}
 
 
+
     public void produkk(View view) {
         Intent intent = new Intent(Drawerr.this, LihatCategory.class);
         startActivity(intent);
@@ -70,7 +71,8 @@ public class Drawerr extends AppCompatActivity implements NavigationView.OnNavig
         startActivity(intent);
     }
     public void contact(View view) {
-
+        Intent intent = new Intent(Drawerr.this, Contact.class);
+        startActivity(intent);
     }
 
     @Override
@@ -82,12 +84,7 @@ public class Drawerr extends AppCompatActivity implements NavigationView.OnNavig
             super.onBackPressed();
         }
     }
-
-
-
-
-
-    @SuppressWarnings("StatementWithEmptyBody")
+ @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -99,8 +96,13 @@ public class Drawerr extends AppCompatActivity implements NavigationView.OnNavig
             Intent intent = new Intent(Drawerr.this, LihatCategory.class);
             startActivity(intent);
 
+        } else if (id == R.id.nav_support) {
+            Intent intent = new Intent(Drawerr.this, Download.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_contact) {
-            Toast.makeText(Drawerr.this,"Aplikasi Ini Masih Dalam Tahap Pengembangan" ,Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(Drawerr.this, Contact.class);
+            startActivity(intent);
 
         }  else if (id == R.id.nav_place) {
             Intent intent = new Intent(Drawerr.this, Maps.class);
@@ -108,6 +110,9 @@ public class Drawerr extends AppCompatActivity implements NavigationView.OnNavig
 
         } else if (id == R.id.nav_web) {
             Intent intent = new Intent(Drawerr.this, web.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_about) {
+            Intent intent = new Intent(Drawerr.this, About.class);
             startActivity(intent);
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

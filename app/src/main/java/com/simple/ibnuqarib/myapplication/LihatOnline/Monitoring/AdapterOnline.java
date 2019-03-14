@@ -34,6 +34,7 @@ public class AdapterOnline extends RecyclerView.Adapter<AdapterOnline.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         holder.tvNama.setText(online.get(position).getNamaSubCategory());
+        holder.tvDeskk.setText(online.get(position).getDeskripsi());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,10 +53,11 @@ public class AdapterOnline extends RecyclerView.Adapter<AdapterOnline.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tvNama;
+        TextView tvNama,tvDeskk;
         public MyViewHolder(View itemView) {
             super(itemView);
             tvNama = itemView.findViewById(R.id.nama_Online);
+            tvDeskk = itemView.findViewById(R.id.desk_subo);
         }
     }
 }

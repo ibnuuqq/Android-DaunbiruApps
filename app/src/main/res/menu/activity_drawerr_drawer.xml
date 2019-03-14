@@ -13,6 +13,10 @@
             android:icon="@drawable/produk"
             android:title="PRODUCT" />
         <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/support"
+            android:title="SUPPORT" />
+        <item
             android:id="@+id/nav_place"
             android:icon="@drawable/places"
             android:title="PLACES" />
@@ -25,10 +29,14 @@
             android:id="@+id/nav_web"
             android:icon="@drawable/web"
             android:title="WEBSITE" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="ABOUT US" />
 
     </group>
-    <item android:tooltipText="CopyRight 2019"
-        tools:ignore="MenuTitle">
-
+    <item android:title=" "></item>
+    <item android:title=" "></item>
+    <item android:title="DaunBiru Engineering">
     </item>
 </menu>

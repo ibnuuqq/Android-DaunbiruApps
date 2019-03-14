@@ -33,6 +33,7 @@ public class AdapterAnalyzer extends RecyclerView.Adapter<AdapterAnalyzer.MyView
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         holder.tvNama.setText(analyzer.get(position).getNamaSubCategory());
+        holder.tvDeskk.setText(analyzer.get(position).getDeskripsi());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,10 +52,11 @@ public class AdapterAnalyzer extends RecyclerView.Adapter<AdapterAnalyzer.MyView
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tvNama;
+        TextView tvNama,tvDeskk;
         public MyViewHolder(View itemView) {
             super(itemView);
             tvNama = itemView.findViewById(R.id.nama_Analyzer);
+            tvDeskk = itemView.findViewById(R.id.desk_sub);
         }
     }
 }

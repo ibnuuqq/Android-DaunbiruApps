@@ -16,69 +16,50 @@ import android.widget.ProgressBar;
 
 public class web extends AppCompatActivity {
 
-    private WebView websiteku;
+    private WebView webView;
     private ProgressBar loading; //Menambahkan widget ProgressBar
 
-    private String URL = "http://www.daunbiru.co.id/";
+    //private String URL = "http://www.daunbiru.co.id/";
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.web);
-        websiteku = findViewById(R.id.my_web);
-        loading = findViewById(R.id.progress); //Menginisialisasi ID ProgressBar
-        settings();
-        load_website();
+        webView = findViewById(R.id.my_web);
+        loading = findViewById(R.id.progress);
+        //Menginisialisasi ID ProgressBar
+        webView.setWebViewClient(new myWebclient());
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("https://www.daunbiru.co.id/");
+
     }
 
-    private void load_website() {
-        websiteku.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+    public class myWebclient extends WebViewClient{
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+            loading.setVisibility(View.GONE);
+        }
 
-        //Tambahkan WebChromeClient
-        websiteku.setWebChromeClient(new WebChromeClient(){
-            @Override
-            public void onProgressChanged(WebView view, int newProgress) {
-                //ProgressBar akan Terlihat saat Halaman Dimuat
-                loading.setVisibility(View.VISIBLE);
-                loading.setProgress(newProgress);
-                if(newProgress == 100){
-                    //ProgressBar akan Menghilang setelah Valuenya mencapat 100%
-                    loading.setVisibility(View.GONE);
-                }
-                super.onProgressChanged(view, newProgress);
-            }
-        });
+        @Override
+        public void onPageStarted(WebView view, String url, Bitmap favicon) {
+            super.onPageStarted(view, url, favicon);
+        }
 
-        websiteku.setWebViewClient(new WebViewClient(){
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-                view.loadUrl(request.toString());
-                return true;
-            }
-
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                //ProgressBar akan Menghilang setelah Halaman Selesai Dimuat
-                super.onPageFinished(view, url);
-                loading.setVisibility(View.GONE);
-            }
-        });
-
-        websiteku.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        websiteku.loadUrl(URL);
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            view.loadUrl(url);
+            return super.shouldOverrideUrlLoading(view, url);
+        }
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if((keyCode==KeyEvent.KEYCODE_BACK) && webView.canGoBack()){
+            webView.goBack();
+            return true;
+        }
 
-    @SuppressLint("SetJavaScriptEnabled")
-    private void settings() {
-        WebSettings web_settings = websiteku.getSettings();
-        web_settings.setJavaScriptEnabled(true);
-        web_settings.setAllowContentAccess(true);
-        web_settings.setUseWideViewPort(true);
-        web_settings.setLoadsImagesAutomatically(true);
-        web_settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
-        web_settings.setRenderPriority(WebSettings.RenderPriority.HIGH);
-        web_settings.setEnableSmoothTransition(true);
-        web_settings.setDomStorageEnabled(true);
+        return super.onKeyDown(keyCode, event);
     }
 }

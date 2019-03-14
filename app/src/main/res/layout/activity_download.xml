@@ -11,8 +11,8 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#3888d9"/>
+        android:layout_height="250dp"
+        android:background="@drawable/image5"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:background="#FFF"
+            android:background="#F2F2F2"
             android:orientation="horizontal">
 
 

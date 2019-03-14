@@ -12,15 +12,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama Product"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="19dp"
+            android:text="Product Information"
+            android:paddingLeft="45dp"
+            android:layout_gravity="center"
+            android:paddingRight="45dp"
+            android:layout_marginTop="25dp"
             android:textColor="#fff"
             android:background="@drawable/buat_productinfo"
             android:textSize="25sp"
@@ -32,20 +31,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:textColor="#3888d9"
             android:gravity="center"
+            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="10sp"
-            android:text="Nama SUB"
+            android:text="Product Name"
             android:textStyle="bold"
             tools:targetApi="o" />
+
         <ImageView
             android:id="@+id/img_AnalyzerMedia"
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="210dp"
             android:layout_marginHorizontal="50dp"
             android:layout_marginTop="10dp"
-            android:scaleType="fitXY"
-            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitCenter"
+            android:src="@drawable/daunbiru"
             tools:targetApi="o" />
         <TextView
             android:layout_width="wrap_content"
@@ -92,18 +92,18 @@
             android:id="@+id/deskripsi_sub"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginHorizontal="20dp"
-            android:text="kegelapan"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Description"
             android:layout_marginTop="10dp"
             android:gravity="left"/>
         <TextView
             android:id="@+id/deskripsi_media"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginHorizontal="25dp"
-            android:text="kegelapan"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Description"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="40dp"
             android:gravity="left"/>
