@@ -55,7 +55,6 @@ public class Contact extends AppCompatActivity {
             webView.goBack();
             return true;
         }
-
         return super.onKeyDown(keyCode, event);
     }
 }

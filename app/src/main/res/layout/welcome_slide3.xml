@@ -30,7 +30,7 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="Action proper maintenance or repair and will actually help improve the effectiveness of asset/machine, so that be efficiency and reliability of the plant can be maintained or even increased."
+            android:text="@string/welcom_3"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />

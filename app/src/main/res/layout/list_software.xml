@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="#3888d9"/>
+        android:background="#3395ff"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,10 +37,10 @@
                 android:textStyle="bold"
                 tools:ignore="RtlSymmetry" />
         </LinearLayout>
-        <LinearLayout
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_firm"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/listSoft"
                 android:layout_width="match_parent"
@@ -48,6 +48,6 @@
                 android:background="#fff"
                 android:clipToPadding="false"
                 android:padding="6dp" />
-        </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
     </LinearLayout>
 </RelativeLayout>

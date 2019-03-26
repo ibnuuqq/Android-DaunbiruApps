@@ -31,7 +31,7 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="Daun Biru solution are able to analyze actual conditions of asset/engine based on measurement data that exist so that maintenance or repair action taken was proper and correct."
+            android:text="@string/welcome_2"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />

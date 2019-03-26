@@ -10,7 +10,7 @@
             android:title="HOME" />
         <item
             android:id="@+id/nav_produk"
-            android:icon="@drawable/produk"
+            android:icon="@drawable/produkk"
             android:title="PRODUCT" />
         <item
             android:id="@+id/nav_support"
@@ -22,7 +22,7 @@
             android:title="PLACES" />
         <item
             android:id="@+id/nav_contact"
-            android:icon="@drawable/messages"
+            android:icon="@drawable/kontak"
             android:title="CONTACT" />
 
         <item
@@ -37,6 +37,6 @@
     </group>
     <item android:title=" "></item>
     <item android:title=" "></item>
-    <item android:title="DaunBiru Engineering">
+    <item android:title=" Daunbiru Apps">
     </item>
 </menu>

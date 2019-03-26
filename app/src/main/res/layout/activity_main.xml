@@ -4,18 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#000000"
     android:scrollbars="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Drawerr"
+    tools:showIn="@layout/app_bar_drawerr">
 
-    <ImageView
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/Imageslid"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/image5"
-        android:scaleType="center" />
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp">
+
+    </com.synnapps.carouselview.CarouselView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,35 +35,32 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:gravity="center"
+            android:gravity="start"
             android:orientation="vertical"
-            tools:ignore="UseCompoundDrawables">
+            android:paddingStart="100dp"
+            tools:ignore="RtlSymmetry,UseCompoundDrawables">
 
             <ImageView
-                android:layout_width="130dp"
+                android:layout_width="160dp"
                 android:layout_height="70dp"
                 android:background="@drawable/buat_logo_dalem"
                 android:contentDescription="TODO"
+                android:layout_marginTop="35dp"
                 android:src="@drawable/logo_dalem" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/welcome"
-                android:textColor="#fff"
-                android:textSize="25sp"
-                android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
+            android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ini Buat Our Fiture"
-                android:background="@drawable/buat_productinfo"
+                android:text="Our Features"
+                android:textSize="29sp"
+                android:elevation="3dp"
+                android:textStyle="bold"
+                android:background="@drawable/buat_ourfeatur"
                 android:gravity="center"/>
         </LinearLayout>
 
@@ -67,18 +71,16 @@
             android:background="#fff"
             android:orientation="horizontal">
 
-
             <LinearLayout
                 android:id="@+id/gridkiri"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:paddingLeft="10dp"
-                android:paddingRight="2dp"
-                android:paddingTop="20dp">
+                android:paddingRight="2dp">
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -86,6 +88,10 @@
                     android:layout_margin="3dp"
                     android:layout_marginBottom="40dp"
                     android:layout_marginTop="30dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="produkk"
                     app:cardCornerRadius="7dp"
                     app:cardElevation="5dp">
 
@@ -98,13 +104,12 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="110dp"
+                            android:layout_height="100dp"
                             android:layout_marginHorizontal="20dp"
                             android:layout_marginTop="15dp"
                             android:src="@drawable/slider2" />
 
                         <TextView
-                            android:id="@+id/namaa_okumen"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -124,6 +129,10 @@
                     android:layout_margin="3dp"
                     android:layout_marginBottom="50dp"
                     android:layout_marginTop="50dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="contact"
                     app:cardCornerRadius="7dp"
                     app:cardElevation="5dp">
 
@@ -136,13 +145,12 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="110dp"
+                            android:layout_height="100dp"
                             android:layout_marginHorizontal="20dp"
                             android:layout_marginTop="15dp"
                             android:src="@drawable/slider2" />
 
                         <TextView
-                            android:id="@+id/namaa_dokumen"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -160,13 +168,12 @@
                 android:id="@+id/gridkanan"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:paddingLeft="2dp"
-                android:paddingRight="10dp"
-                android:paddingTop="20dp">
+                android:paddingRight="10dp">
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -175,9 +182,11 @@
                     android:layout_marginBottom="40dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="7dp"
-                    app:cardElevation="5dp">
-
-
+                    android:onClick="download"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    app:cardElevation="5dp"
+                    android:focusable="true">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -186,13 +195,12 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="110dp"
+                            android:layout_height="100dp"
                             android:layout_marginHorizontal="20dp"
                             android:layout_marginTop="15dp"
                             android:src="@drawable/slider2" />
 
                         <TextView
-                            android:id="@+id/namaa2_okumen"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -201,10 +209,8 @@
                             android:textColor="#3888d9"
                             android:textSize="15sp"
                             android:textStyle="bold" />
-
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
-
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -213,7 +219,11 @@
                     android:layout_marginBottom="50dp"
                     android:layout_marginTop="50dp"
                     app:cardCornerRadius="7dp"
-                    app:cardElevation="5dp">
+                    android:onClick="web"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    app:cardElevation="5dp"
+                    android:focusable="true">
 
 
                     <LinearLayout
@@ -221,16 +231,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:orientation="vertical">
-
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="110dp"
+                            android:layout_height="100dp"
                             android:layout_marginHorizontal="20dp"
                             android:layout_marginTop="15dp"
                             android:src="@drawable/slider2" />
-
                         <TextView
-                            android:id="@+id/naa_dokumen"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -239,7 +246,6 @@
                             android:textColor="#3888d9"
                             android:textSize="15sp"
                             android:textStyle="bold" />
-
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>

@@ -31,12 +31,10 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="Daun Biru provide a solution to monitor and measure the performance of the engine/assets offline and online, so that measurement data can be used as a reference for further analysis."
+            android:text="@string/welcome_1"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />
 
     </LinearLayout>
-
-
 </RelativeLayout>

@@ -33,6 +33,7 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:textSize="25sp"
+                    android:layout_marginHorizontal="5dp"
                     android:textStyle="normal"
                     android:textColor="#3888d9"
                     android:text="Nama Sub Analyzer"  />
@@ -43,6 +44,7 @@
                     android:maxLines="2"
                     android:layout_marginHorizontal="15dp"
                     android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
                     android:text="INI  buat deskripsi dari tabel sub"/>
 
             </LinearLayout>

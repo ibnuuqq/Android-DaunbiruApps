@@ -22,6 +22,4 @@
         android:background="#67b2ff"
         app:headerLayout="@layout/nav_header_drawerr"
         app:menu="@menu/activity_drawerr_drawer" />
-
-
 </android.support.v4.widget.DrawerLayout>

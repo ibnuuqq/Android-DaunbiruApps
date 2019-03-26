@@ -13,7 +13,9 @@ public class InitRetrofit {
     }
 
         private static Retrofit setInit() {
-            String API_URL = "http://192.168.1.44/daunbiruapp/";
+        //http://10.10.10.11:9991/daunbiruapp/
+            // IP SERVER DAUN BIRU
+            String API_URL = "http://10.10.10.11:9991/daunbiruapp/";
             return new Retrofit.Builder().baseUrl(API_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();

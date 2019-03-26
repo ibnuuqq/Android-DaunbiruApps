@@ -42,6 +42,6 @@ public interface ApiServices {
     @GET("tampil_media.php")
     Call<List<MediaItem>> request_get_media(@Query("id_sub_category") String id_sub_category);
     //Model Data > Nama Method
-   // @GET("tampil_sub.php")
-    //Call<ResponseSub> request_show_sub(@Query("id_category")String id_category);
+   //@GET("tampil_sub.php")
+    // Call<ResponseSub> request_show_sub(@Query("id_category")String id_category);
 }

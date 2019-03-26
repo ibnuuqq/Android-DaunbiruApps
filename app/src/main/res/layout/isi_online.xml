@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_marginTop="12dp"
     android:layout_width="match_parent"
@@ -15,7 +16,6 @@
         android:layout_margin="4dp"
         card_view:cardElevation="3dp"
         card_view:cardCornerRadius="5dp">
-
         <RelativeLayout
             android:id="@+id/top_layout"
             android:layout_width="match_parent"
@@ -32,6 +32,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
+                    android:layout_marginHorizontal="5dp"
                     android:textSize="25sp"
                     android:textStyle="normal"
                     android:textColor="#3888d9"
@@ -43,7 +44,9 @@
                     android:maxLines="2"
                     android:layout_marginHorizontal="15dp"
                     android:textSize="15sp"
-                    android:text="INI  buat deskripsi dari tabel sub"/>
+                    android:layout_marginBottom="10dp"
+                    android:text="INI  buat deskripsi dari tabel sub"
+                    tools:targetApi="o" />
             </LinearLayout>
 
         </RelativeLayout>

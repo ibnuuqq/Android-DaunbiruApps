@@ -55,7 +55,7 @@ public class LihatMediaOnline extends AppCompatActivity{
                         tvNamasub.setText(nama);
                         String desksub = getIntent().getStringExtra("DESKON");
                         tvDeskSub.setText(desksub);
-                        String UrlGambar = "http://192.168.1.44/daunbiruapp/images/" + response.body().get(i).getMedia();
+                        String UrlGambar = "http://10.10.10.11:9999/admin/images/" + response.body().get(i).getMedia();
                         Picasso.with(LihatMediaOnline.this).load(UrlGambar).into(imgMedia);
                         tvDeskMed.setText(response.body().get(i).getDeskripsi());
                     }

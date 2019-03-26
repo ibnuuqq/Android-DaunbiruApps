@@ -34,7 +34,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="000000" />
+                                      <entry key="backgroundColor" value="272727" />
                                       <entry key="foregroundImage" value="E:\Android Project\MyApplication\app\src\main\res\drawable\logo_dalem.png" />
                                     </map>
                                   </option>

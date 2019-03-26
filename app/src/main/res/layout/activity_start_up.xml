@@ -4,10 +4,11 @@
     android:background="@drawable/main_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
+
 
     <LinearLayout
-        android:layout_centerInParent="true"
         android:orientation="vertical"
         android:gravity="center"
         android:layout_width="match_parent"
@@ -18,16 +19,17 @@
             android:layout_width="247dp"
             android:layout_height="179dp" />
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <TextView
             android:textSize="20sp"
             android:textColor="#FFF"
             android:gravity="center"
-            android:layout_alignParentBottom="true"
-            android:text="PT.DaunBiru Engineering"
+            android:text="PT. DaunBiru Engineering"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </LinearLayout>
-
-
 </RelativeLayout>

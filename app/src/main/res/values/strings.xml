@@ -29,4 +29,8 @@
     <string name="portable_analyzer">PORTABLE ANALYZER</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
+    <string name="support">SUPPORT</string>
+    <string name="welcome_2">Daun Biru solution are able to analyze actual conditions of asset/engine based on measurement data that exist so that maintenance or repair action taken was proper and correct.</string>
+    <string name="welcome_1">Daun Biru provide a solution to monitor and measure the performance of the engine/assets offline and online, so that measurement data can be used as a reference for further analysis.</string>
+    <string name="welcom_3">Action proper maintenance or repair and will actually help improve the effectiveness of asset/machine, so that be efficiency and reliability of the plant can be maintained or even increased.</string>
 </resources>

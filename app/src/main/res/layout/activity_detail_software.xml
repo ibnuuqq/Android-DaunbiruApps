@@ -2,9 +2,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:scrollbars="vertical"
-    android:layout_height="match_parent"
     tools:context=".ResponseSoftware.SOFTWARE.DetailSoftware">
 
     <LinearLayout
@@ -13,18 +13,16 @@
         android:layout_marginTop="15dp"
         android:orientation="vertical">
 
-
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Software Information"
-            android:paddingLeft="35dp"
             android:layout_gravity="center"
-            android:paddingRight="35dp"
             android:layout_marginTop="25dp"
-            android:textColor="#fff"
             android:background="@drawable/buat_productinfo"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:text="Software Information"
+            android:textColor="#fff"
             android:textSize="25sp"
             android:textStyle="bold"
             tools:ignore="HardcodedText,RtlSymmetry" />
@@ -33,24 +31,24 @@
             android:id="@+id/nama_software"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
             android:text="Nama soft"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Version"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buat_productinfo"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="19dp"
+            android:text="Version"
             android:textColor="#fff"
-            android:background="@drawable/buat_productinfo"
             android:textSize="25sp"
             android:textStyle="bold"
             tools:ignore="RtlSymmetry" />
@@ -59,28 +57,28 @@
             android:id="@+id/versi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Versi"
-            android:textSize="20sp"
             android:gravity="center"
-             />
+            android:text="Versi"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tanggal_software"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
             android:gravity="center"
-            android:text="Buat tanggal"/>
+            android:text="Buat tanggal"
+            android:textSize="15sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buat_productinfo"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="19dp"
+            android:text="Description"
             android:textColor="#fff"
-            android:background="@drawable/buat_productinfo"
             android:textSize="25sp"
             android:textStyle="bold"
             tools:ignore="RtlSymmetry" />
@@ -89,21 +87,22 @@
             android:id="@+id/keterangan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginHorizontal="10dp"
-            android:text="Description"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="40dp"
-            android:gravity="left"/>
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Description"
+            android:textSize="18sp" />
+
         <Button
             android:id="@+id/downloadSoft"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="#3888d9"
+            android:elevation="80dp"
             android:text="Download"
             android:textColor="#fff"
-            android:textStyle="bold"
-            android:background="#3888d9"
-            android:elevation="80dp" />
+            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

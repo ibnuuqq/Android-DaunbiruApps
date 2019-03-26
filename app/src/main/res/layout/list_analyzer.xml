@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:background="#3888d9"/>
+        android:background="#3395ff"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +41,8 @@
                 android:textStyle="bold"
                 tools:ignore="RtlSymmetry" />
         </LinearLayout>
-    <LinearLayout
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -50,6 +51,6 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>
 </RelativeLayout>

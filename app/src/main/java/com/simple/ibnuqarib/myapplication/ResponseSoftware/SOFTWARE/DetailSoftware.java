@@ -45,7 +45,7 @@ public class DetailSoftware extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                Uri uri = Uri.parse("http://192.168.1.44/daunbiruapp/software/"+ URL_DOWNLOAD);
+                Uri uri = Uri.parse("http://10.10.10.11:9999/admin/software/"+ URL_DOWNLOAD);
                 DownloadManager.Request request = new DownloadManager.Request(uri);
                 request.allowScanningByMediaScanner();
                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,URL_DOWNLOAD);

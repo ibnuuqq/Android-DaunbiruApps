@@ -51,7 +51,7 @@ public class DetailModul extends Activity {
             @Override
             public void onClick(View view) {
                 downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                Uri uri = Uri.parse("http://192.168.1.44/daunbiruapp/file/"+ URL_DOWNLOAD);
+                Uri uri = Uri.parse("http://10.10.10.11:9999/admin/file/"+ URL_DOWNLOAD);
                 DownloadManager.Request request = new DownloadManager.Request(uri);
                 request.allowScanningByMediaScanner();
                 //
@@ -95,8 +95,6 @@ public class DetailModul extends Activity {
         String versi = getIntent().getStringExtra("VERSI");
         String waktu = getIntent().getStringExtra("WAKTU");
         String keterangan = getIntent().getStringExtra("KET");
-
-
         tvNama.setText(nama_dokumen);
         tvVersii.setText("Version : "+versi);
         tvWaktu.setText("Uploaded on " + waktu);

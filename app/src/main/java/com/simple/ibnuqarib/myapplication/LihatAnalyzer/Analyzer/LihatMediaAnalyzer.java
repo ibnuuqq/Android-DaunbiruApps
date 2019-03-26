@@ -1,6 +1,8 @@
 package com.simple.ibnuqarib.myapplication.LihatAnalyzer.Analyzer;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -27,6 +29,8 @@ public class LihatMediaAnalyzer extends AppCompatActivity {
     TextView tvNamasub,tvDeskSub,tvDeskMed,tvNamaSpek,tvValueSpek;
     ImageView imgMedia;
     RecyclerView recyclerView;
+
+    @SuppressLint("ResourceAsColor")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_media_analyzer);
@@ -53,7 +57,7 @@ public class LihatMediaAnalyzer extends AppCompatActivity {
                        tvNamasub.setText(nama);
                        String desksub = getIntent().getStringExtra("DESKSUB");
                        tvDeskSub.setText(desksub);
-                       String UrlGambar = "http://192.168.1.44/daunbiruapp/images/" + response.body().get(i).getMedia();
+                       String UrlGambar = "http://10.10.10.11:9999/admin/images/" + response.body().get(i).getMedia();
                        Picasso.with(LihatMediaAnalyzer.this).load(UrlGambar).into(imgMedia);
                        tvDeskMed.setText(response.body().get(i).getDeskripsi());
                    }
@@ -74,6 +78,7 @@ public class LihatMediaAnalyzer extends AppCompatActivity {
                    List<SpekItem> data_spek = response.body().getSpek();
                    boolean status = response.body().isStatus();
                    if (status){
+
                        AdapterSpek adapter = new AdapterSpek(LihatMediaAnalyzer.this,data_spek);
                        recyclerView.setAdapter(adapter);
                    }
@@ -108,4 +113,6 @@ public class LihatMediaAnalyzer extends AppCompatActivity {
             //}
         //});
     }
+
+
 }
